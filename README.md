@@ -1,6 +1,3 @@
-# Title: M.A.V.I.S My Average Very Intelligent System 
-
-
 ## Introduction
 Artificial intelligence (AI) is rapidly evolving in today’s age. M.A.V.I.S (My Average Very Intelligent System) is an AI-powered voice assistant designed to provide an engaging and interactive user experience. It is inspired by the fictional AI J.A.R.V.I.S from the Iron Man comics and movies. J.A.R.V.I.S is similar to traditional AI assistants like Siri and Google Assistant, but offers a more conversational and witty personality. Through the integration of speech-to-text, a fine-tuned large language model, waveform audio visualizations and text-to-speech synthesis, M.A.V.I.S offers dynamic and fun interactions through both auditory and visual feedback
 In contrast to the majority of existing voice assistants that rely on rigid command-based systems, M.A.V.I.S is designed to take into account contextual awareness and user engagement. The model is offered as a mobile app. By leveraging open-source applications VOSK (speech recognition), RASA (natural language understanding), and Mozilla TTS (speech synthesis), the model balances performance, flexibility, and ethical AI principles. M.A.V.I.S is an AI system that not only understands user intent but also communicates in a human-like manner.
