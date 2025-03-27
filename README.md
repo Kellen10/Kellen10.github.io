@@ -4,19 +4,20 @@ In contrast to the majority of existing voice assistants that rely on rigid comm
 Our approach to creating M.A.V.I.S uses a sophisticated pipeline that transforms voice input into engaging interactions. It is a complete redesign of the typical AI assistant, from recording audio waveforms to generating smart responses and rendering speech output. We emphasize user interaction, accessibility, and ethics, and have created an AI assistant that has made technology interactions more responsive and engaging. 
 
 ## Related Works
-When building M.A.V.I.S, we looked at a lot of other projects and research to understand what's already out there and where we could do something different. One of the biggest areas we focused on was the ethics of advanced AI assistants. A paper by Gabriel et al. (2024) brings up important questions about trust, misuse, and value alignment. That stuck with us, and it's why we’re putting a lot of emphasis on transparency, feedback loops, and diverse data from the start. We don’t want to just build something that works—we want it to be responsible and respectful of the people using it.
+When building M.A.V.I.S, we looked at a lot of other projects and research to understand what's already out there and where we could do something different. One of the biggest areas we focused on was the ethics of advanced AI assistants. A paper by Gabriel et al. (2024) brings up important questions about trust, misuse, and value alignment[^1]. That stuck with us, and it's why we’re putting a lot of emphasis on transparency, feedback loops, and diverse data from the start. We don’t want to just build something that works—we want it to be responsible and respectful of the people using it.
 
-On the technical side, M.A.V.I.S uses a combination of VOSK for speech-to-text, RASA for natural language understanding, and Mozilla TTS for generating speech. This setup is pretty aligned with a few other projects, like My Assistant SRSTC and another voice assistant built using GPT-3.5 and the Web Speech API. Those projects show how to stitch together the components of a speech pipeline, and they’ve been helpful in figuring out how to structure ours. The difference is that we’re going beyond just making the assistant functional—we’re adding personality, visual waveform feedback, and a more dynamic way of responding to users.
+On the technical side, M.A.V.I.S uses a combination of VOSK for speech-to-text, RASA for natural language understanding, and Mozilla TTS for generating speech. This setup is pretty aligned with a few other projects, like My Assistant SRSTC[^6] and another voice assistant built using GPT-3.5 and the Web Speech API[^7]. Those projects show how to stitch together the components of a speech pipeline, and they’ve been helpful in figuring out how to structure ours. The difference is that we’re going beyond just making the assistant functional—we’re adding personality, visual waveform feedback, and a more dynamic way of responding to users.
 
-There’s also some cool research like LLaSM (Large Language and Speech Model) that tries to merge speech and text into a single training process. We're not doing exactly that, but it definitely influenced how we think about context in speech. While LLaSM is more focused on large-scale, instruction-following models, we’re focused on real-time interaction and creating an assistant that feels alive—more like J.A.R.V.I.S than a basic Q&A bot.
+There’s also some cool research like LLaSM (Large Language and Speech Model) that tries to merge speech and text into a single training process[^2]. We're not doing exactly that, but it definitely influenced how we think about context in speech. While LLaSM is more focused on large-scale, instruction-following models, we’re focused on real-time interaction and creating an assistant that feels alive—more like J.A.R.V.I.S than a basic Q&A bot.
 
-We also took inspiration from projects that focus on specific user groups. One study looked at how older adults interact with voice assistants, and it pointed out how rule-based models don’t always understand different speech patterns, especially as people age. This made us think more about inclusivity and how we can make M.A.V.I.S flexible enough to work well for everyone—not just the tech-savvy.
+We also took inspiration from projects that focus on specific user groups. One study looked at how older adults interact with voice assistants, and it pointed out how rule-based models don’t always understand different speech patterns, especially as people age[^3]. This made us think more about inclusivity and how we can make M.A.V.I.S flexible enough to work well for everyone—not just the tech-savvy.
 
-Another interesting idea came from a paper about real-time emotion recognition in smart home assistants. They used things like MFCCs and CNNs to detect emotional tone in speech. We’re not fully there yet, but it got us thinking about how emotional awareness could be a future direction for M.A.V.I.S—making it not just smart, but empathetic and reactive in more human ways.
+Another interesting idea came from a paper about real-time emotion recognition in smart home assistants. They used things like MFCCs and CNNs to detect emotional tone in speech[^5]. We’re not fully there yet, but it got us thinking about how emotional awareness could be a future direction for M.A.V.I.S—making it not just smart, but empathetic and reactive in more human ways.
 
-And finally, to help with some of the nuts and bolts of building this, we leaned on resources like Natural Language Processing: An Introduction. It’s more of a general guide, but it helped us troubleshoot and understand how to better structure our NLP models, especially when users go off-script or say something unexpected.
+And finally, to help with some of the nuts and bolts of building this, we leaned on resources like *Natural Language Processing: An Introduction*[^4]. It’s more of a general guide, but it helped us troubleshoot and understand how to better structure our NLP models, especially when users go off-script or say something unexpected.
 
 Overall, our approach to M.A.V.I.S blends what’s been done before with some fresh takes—like giving it a real personality, making it visually and auditorily engaging, and thinking through the ethical side from the beginning. It’s not just about building a tool, it’s about reimagining what interacting with AI could feel like.
+
 
 ## Ethical Sweep
 General Questions: 
@@ -43,16 +44,16 @@ What is the environmental impact of training and running M.A.V.I.S? All AI model
 
 ## References
 
-1. Gabriel, I., Manzini, A., Keeling, G., Hendricks, L. A., Rieser, V., Iqbal, H., ... & Manyika, J. (2024). *The Ethics of Advanced AI Assistants*. arXiv preprint arXiv:2404.16244. [https://arxiv.org/abs/2404.16244](https://arxiv.org/abs/2404.16244)
+[^1]. Gabriel, I., Manzini, A., Keeling, G., Hendricks, L. A., Rieser, V., Iqbal, H., ... & Manyika, J. (2024). *The Ethics of Advanced AI Assistants*. arXiv preprint arXiv:2404.16244. [https://arxiv.org/abs/2404.16244](https://arxiv.org/abs/2404.16244)
 
-2. *LLASM: Large Language and Speech Model*. arXiv preprint arXiv:2308.15930. [https://arxiv.org/pdf/2308.15930](https://arxiv.org/pdf/2308.15930)
+[^2]. *LLASM: Large Language and Speech Model*. arXiv preprint arXiv:2308.15930. [https://arxiv.org/pdf/2308.15930](https://arxiv.org/pdf/2308.15930)
 
-3. *Understanding Older People’s Voice Interactions with Smart Voice Assistants: A New Modified Rule-Based Natural Language Processing Model with Human Input*. [https://pmc.ncbi.nlm.nih.gov/articles/PMC11135128/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11135128/)
+[^3]. *Understanding Older People’s Voice Interactions with Smart Voice Assistants: A New Modified Rule-Based Natural Language Processing Model with Human Input*. [https://pmc.ncbi.nlm.nih.gov/articles/PMC11135128/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11135128/)
 
-4. *Natural Language Processing: An Introduction*. [https://www.researchgate.net/publication/51576224_Natural_language_processing_An_introduction](https://www.researchgate.net/publication/51576224_Natural_language_processing_An_introduction)
+[^4]. *Natural Language Processing: An Introduction*. [https://www.researchgate.net/publication/51576224_Natural_language_processing_An_introduction](https://www.researchgate.net/publication/51576224_Natural_language_processing_An_introduction)
 
-5. *Real-Time Speech Emotion Analysis for Smart Home Assistants*. [https://ieeexplore.ieee.org/abstract/document/9352018](https://ieeexplore.ieee.org/abstract/document/9352018)
+[^5]. *Real-Time Speech Emotion Analysis for Smart Home Assistants*. [https://ieeexplore.ieee.org/abstract/document/9352018](https://ieeexplore.ieee.org/abstract/document/9352018)
 
-6. *My Assistant SRSTC: Speech Recognition and Speech to Text Conversion*. [https://ieeexplore.ieee.org/abstract/document/10593324](https://ieeexplore.ieee.org/abstract/document/10593324)
+[^6]. *My Assistant SRSTC: Speech Recognition and Speech to Text Conversion*. [https://ieeexplore.ieee.org/abstract/document/10593324](https://ieeexplore.ieee.org/abstract/document/10593324)
 
-7. *Artificial Intelligence-Based Chatbot with Voice Assistance*. [https://ieeexplore.ieee.org/abstract/document/10545197](https://ieeexplore.ieee.org/abstract/document/10545197)
+[^7]. *Artificial Intelligence-Based Chatbot with Voice Assistance*. [https://ieeexplore.ieee.org/abstract/document/10545197](https://ieeexplore.ieee.org/abstract/document/10545197)
