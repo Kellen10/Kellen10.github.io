@@ -40,6 +40,14 @@ What are likely misinterpretations of the results and what can be done to preven
 How might we impinge individuals' privacy and/or anonymity? Handling the voice-to-text data is important and can be more secure with encryption.
 What is the environmental impact of training and running M.A.V.I.S? All AI models require tons of computational power, which in turn has an energy cost. We will consider optimizing efficiency and minimizing energy use where possible.
 
+## Methods
+We plan to build M.A.V.I.S using an open-source tech stack, integrating VOSK for speech-to-text, RASA for natural language understanding, and Mozilla TTS for speech synthesis. Our pipeline will also include waveform visualizations and a unique personality layer to enhance user interaction and engagement.
+
+## Discussion/Results
+We will evaluate M.A.V.I.S based on its responsiveness, conversational accuracy, and user engagement in various testing scenarios. Initial results will focus on system latency, speech recognition quality, and how naturally the assistant interacts with users.
+
+## Conclusion/Future Work
+Our goal is to create a voice assistant that feels more human and less robotic. Future work includes improving emotional intelligence, expanding accessibility for diverse user groups, and optimizing performance for mobile deployment.
 
 ## References
 
